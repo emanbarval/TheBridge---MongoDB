@@ -1,0 +1,16 @@
+{
+  "name": "mongodb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mongo.js",
+  "dependencies": {
+    "mongodb": "^3.6.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm jest",
+    "start":"node mongo.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
