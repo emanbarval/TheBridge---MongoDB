@@ -21,10 +21,13 @@ MongoClient.connect(url, (err, db)=>{
     dbo.collection("movies").updateMany(query, nuevoValor, (err, res)=>{
 //Si recibimos un error lo lanzamos como excepción
         if(err) throw err;
-//Utilizo el método find junto con toArray para 
+//Utilizo el método find junto con toArray para mostrar todos los elementos de
+//la colección
         dbo.collection("movies").find({}).toArray((err, result)=>{
+            //Imprimimos por pantalla un listado de documentos en la colección
             console.log(result);
         })
+        //Cerramos la conexión
         db.close();
     })
         
